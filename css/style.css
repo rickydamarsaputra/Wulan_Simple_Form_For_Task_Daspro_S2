@@ -1,0 +1,150 @@
+/* import font */
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Mulish", sans-serif;
+}
+
+body {
+	background: #f9f9f9;
+}
+
+:root {
+	--labelColor: #001f3f;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.wrapper .content {
+	width: 50vw;
+	padding: 2.5rem;
+	margin: 2.5rem 0;
+	border-radius: 0.5rem;
+}
+
+.wrapper .content h4 {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1rem;
+	margin-bottom: 2.5rem;
+	font-size: 2rem;
+	font-weight: 200;
+}
+
+.wrapper .content p {
+	text-align: center;
+	margin-top: 1.5rem;
+	font-size: 0.8rem;
+}
+
+.wrapper .content p a {
+	color: var(--labelColor);
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1.5rem;
+}
+
+.form-group label {
+	margin-bottom: 0.5rem;
+	text-transform: capitalize;
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: var(--labelColor);
+	letter-spacing: 0.2rem;
+}
+
+.form-group input {
+	padding: 0.5rem 0;
+	border: 0;
+	background: transparent;
+	border-bottom: 0.15rem solid var(--labelColor);
+}
+
+.form-group input:focus {
+	outline: none;
+}
+
+.form-radio {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.5rem;
+}
+
+.form-radio label {
+	font-size: 0.8rem;
+	margin-bottom: 0;
+	margin-left: 0.5rem;
+}
+
+.form-checkbox {
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.5rem;
+}
+
+.form-checkbox label {
+	font-size: 0.8rem;
+	margin-bottom: 0;
+	margin-left: 0.5rem;
+}
+
+.form-group select {
+	padding: 0.5rem 0;
+	border: 0;
+	border-bottom: 0.15rem solid var(--labelColor);
+	background: transparent;
+}
+
+.form-group select:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+.form-group textarea {
+	padding: 0.5rem 0;
+	border: 0;
+	background: transparent;
+	border-bottom: 0.15rem solid var(--labelColor);
+	resize: none;
+}
+
+.form-group textarea:focus {
+	outline: none;
+}
+
+.content form button {
+	padding: 0.5rem 2rem;
+	cursor: pointer;
+	text-transform: capitalize;
+	font-weight: 700;
+	background: transparent;
+	border: 0.15rem dotted var(--labelColor);
+}
+
+.content form button:focus {
+	outline: none;
+}
+
+/* responsive mobile */
+@media (max-width: 575.98px) {
+	.wrapper .content {
+		width: 100vw;
+	}
+
+	.wrapper .content h4 {
+		font-size: 1.5rem;
+	}
+
+	.content form button {
+		width: 100%;
+	}
+}

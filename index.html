@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T3-P1-20390100007</title>
+  <!-- link css -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="content">
+      <h4>join to <strong>party</strong></h4>
+      <form>
+        <div class="form-group">
+          <label for="username">username</label>
+          <input type="text" id="username" autocomplete="off" placeholder="enter username...">
+        </div>
+        <div class="form-group">
+          <label for="password">password</label>
+          <input type="password" id="password" autocomplete="off" placeholder="enter password...">
+        </div>
+        <div class="form-group">
+          <label for="email">email</label>
+          <input type="email" id="email" autocomplete="off" placeholder="enter email...">
+        </div>
+        <div class="form-group">
+          <label for="gender">gender</label>
+          <div class="form-radio">
+            <input type="radio" id="male" name="gender" checked>
+            <label for="male">male</label>
+          </div>
+          <div class="form-radio">
+            <input type="radio" id="female" name="gender">
+            <label for="female">female</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="hobby">hobby</label>
+          <div class="form-checkbox">
+            <input type="checkbox" id="gaming" name="hobby[]">
+            <label for="gaming">gaming</label>
+          </div>
+          <div class="form-checkbox">
+            <input type="checkbox" id="read" name="hobby[]">
+            <label for="read">read</label>
+          </div>
+          <div class="form-checkbox">
+            <input type="checkbox" id="fishing" name="hobby[]">
+            <label for="fishing">fishing</label>
+          </div>
+          <div class="form-checkbox">
+            <input type="checkbox" id="watching_movies" name="hobby[]">
+            <label for="watching_movies">watching movies</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="last_education">last education</label>
+          <select id="last_education">
+            <option value="">University lecture</option>
+            <option value="">Senior high school</option>
+            <option value="">Junior high school</option>
+            <option value="">Elementary school</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">message</label>
+          <textarea id="message" cols="10" rows="5" placeholder="enter message..."></textarea>
+        </div>
+        <button type="button">submit</button>
+      </form>
+      <p>&copy; copyright <a href="https://github.com/rickydamarsaputra">rickydamarsaputra</a> 2021.</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
